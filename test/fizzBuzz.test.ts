@@ -10,27 +10,27 @@ describe('fizzbuzz', () => {
 
     describe('knows when a number is', () => {
         it('divisible by 3', () => {
-            expect(fizzBuzz.isDivisibleByThree(3)).to.equal(true)
+            expect(fizzBuzz.isDivisibleBy(3, 3)).to.equal(true)
         })
 
         it('not divisible by 3', () => {
-            expect(fizzBuzz.isDivisibleByThree(2)).to.equal(false)
+            expect(fizzBuzz.isDivisibleBy(2, 3)).to.equal(false)
         })
 
         it('divisible by 5', () => {
-            expect(fizzBuzz.isDivisibleByFive(5)).to.equal(true)
+            expect(fizzBuzz.isDivisibleBy(5, 5)).to.equal(true)
         })
 
         it('not divisible by 5', () => {
-            expect(fizzBuzz.isDivisibleByFive(4)).to.equal(false)
+            expect(fizzBuzz.isDivisibleBy(4, 5)).to.equal(false)
         })
 
         it('divisible by 15', () => {
-            expect(fizzBuzz.isDivisibleByFifteen(15)).to.equal(true)
+            expect(fizzBuzz.isDivisibleBy(15, 15)).to.equal(true)
         })
 
         it('not divisible by 15', () => {
-            expect(fizzBuzz.isDivisibleByFifteen(4)).to.equal(false)
+            expect(fizzBuzz.isDivisibleBy(4, 15)).to.equal(false)
         })
     })
 
