@@ -3,7 +3,7 @@ import {expect} from 'chai'
 
 describe('fizzbuzz', () => {
     let fizzBuzz
-    
+
     beforeEach(function() {
         fizzBuzz = new FizzBuzz()
     })
@@ -15,6 +15,14 @@ describe('fizzbuzz', () => {
 
         it('not divisible by 3', () => {
             expect(fizzBuzz.isDivisibleByThree(2)).to.equal(false)
+        })
+
+        it('divisible by 5', () => {
+            expect(fizzBuzz.isDivisibleByFive(5)).to.equal(true)
+        })
+
+        it('not divisible by 5', () => {
+            expect(fizzBuzz.isDivisibleByFive(4)).to.equal(false)
         })
     })
 

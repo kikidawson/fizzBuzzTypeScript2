@@ -6,6 +6,13 @@ export class FizzBuzz {
         return false
     }
 
+    isDivisibleByFive(n: number): boolean {
+        if (n % 5 === 0) {
+            return true
+        }
+        return false
+    }
+
     says(n: number): any {
         if (this.isDivisibleByThree(n)) {
             return "Fizz"
