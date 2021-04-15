@@ -7,6 +7,9 @@ export class FizzBuzz {
     }
 
     says(n: number): any {
-        return "Fizz"
+        if (this.isDivisibleByThree(n)) {
+            return "Fizz"
+        }
+        return n
     }
 }
