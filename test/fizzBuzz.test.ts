@@ -24,6 +24,14 @@ describe('fizzbuzz', () => {
         it('not divisible by 5', () => {
             expect(fizzBuzz.isDivisibleByFive(4)).to.equal(false)
         })
+
+        it('divisible by 15', () => {
+            expect(fizzBuzz.isDivisibleByFifteen(15)).to.equal(true)
+        })
+
+        it('not divisible by 15', () => {
+            expect(fizzBuzz.isDivisibleByFifteen(4)).to.equal(false)
+        })
     })
 
     describe('during play, returns', () => {
@@ -33,6 +41,10 @@ describe('fizzbuzz', () => {
 
         it('Buzz when divisible by five', () => {
             expect(fizzBuzz.says(5)).to.equal("Buzz")
+        })
+
+        it('FizzBuzz when divisible by fifteen', () => {
+            expect(fizzBuzz.says(15)).to.equal("FizzBuzz")
         })
 
         it('number when not divisible by three', () => {
