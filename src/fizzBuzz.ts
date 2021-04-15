@@ -1,16 +1,10 @@
 export class FizzBuzz {
     isDivisibleByThree(n: number): boolean {
-        if (n % 3 === 0) {
-            return true
-        } 
-        return false
+        return (n % 3 === 0 ? true : false)
     }
 
-    isDivisibleByFive(n: number): boolean {
-        if (n % 5 === 0) {
-            return true
-        }
-        return false
+    isDivisibleByFive(n: number): boolean { 
+        return (n % 5 === 0 ? true : false)
     }
 
     says(n: number): any {
