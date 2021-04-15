@@ -1,14 +1,18 @@
 export class FizzBuzz {
     isDivisibleByThree(n: number): boolean {
-        return (n % 3 === 0 ? true : false)
+        return this.isDivisibleBy(n, 3)
     }
 
     isDivisibleByFive(n: number): boolean { 
-        return (n % 5 === 0 ? true : false)
+        return this.isDivisibleBy(n, 5)
     }
 
     isDivisibleByFifteen(n: number): boolean { 
-        return (n % 15 === 0 ? true : false)
+        return this.isDivisibleBy(n, 15)
+    }
+
+    isDivisibleBy(n: number, divisor: number): boolean {
+        return (n % divisor === 0) ? true : false
     }
 
     says(n: number): any {
