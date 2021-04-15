@@ -5,4 +5,8 @@ export class FizzBuzz {
         } 
         return false
     }
+
+    says(n: number): any {
+        return "Fizz"
+    }
 }
