@@ -1,9 +1,14 @@
 import {FizzBuzz} from '../src/fizzBuzz'
 import {expect} from 'chai'
 
-describe('fizzbuzz', () => {
-    it('should return Fizz if input is 3', () => {
+describe('knows when a number is', () => {
+    it('divisible by 3', () => {
         let fizzBuzz = new FizzBuzz()
-        expect(fizzBuzz.input(3)).to.equal('Fizz')
+        expect(fizzBuzz.isDivisibleByThree(3)).to.equal(true)
+    })
+
+    it('not divisible by 3', () => {
+        let fizzBuzz = new FizzBuzz()
+        expect(fizzBuzz.isDivisibleByThree(2)).to.equal(false)
     })
 })

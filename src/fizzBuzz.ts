@@ -1,5 +1,8 @@
 export class FizzBuzz {
-    input(n: number): string {
-        return 'Fizz'
+    isDivisibleByThree(n: number): boolean {
+        if (n % 3 === 0) {
+            return true
+        } 
+        return false
     }
 }
