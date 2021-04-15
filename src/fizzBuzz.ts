@@ -17,6 +17,9 @@ export class FizzBuzz {
         if (this.isDivisibleByThree(n)) {
             return "Fizz"
         }
+        if (this.isDivisibleByFive(n)) {
+            return "Buzz"
+        }
         return n
     }
 }

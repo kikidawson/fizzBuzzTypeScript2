@@ -31,6 +31,10 @@ describe('fizzbuzz', () => {
             expect(fizzBuzz.says(3)).to.equal("Fizz")
         })
 
+        it('Buzz when divisible by five', () => {
+            expect(fizzBuzz.says(5)).to.equal("Buzz")
+        })
+
         it('number when not divisible by three', () => {
             expect(fizzBuzz.says(2)).to.equal(2)
         })
