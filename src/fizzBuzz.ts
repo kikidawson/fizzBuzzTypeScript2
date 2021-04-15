@@ -4,7 +4,7 @@ export class FizzBuzz {
         return (n % divisor === 0) ? true : false
     }
 
-    says(n: number): any {
+    says(n: number): string | number {
         if (this.isDivisibleBy(n, 15)) {
             return "FizzBuzz"
         }
